@@ -9,3 +9,9 @@ print(len(myName))
 print('What is your age?')   # ask for their age
 myAge = input()
 print('You will be ' + str(int(myAge) +1) + ' in a year.')
+print('호구야 실수값좀 입력해라: ')
+myround = input()
+if str(type(myround)) == "<class 'float'>" :
+    print('니가 입력한 값을 반올림해주마 :' + round(myround))
+else:
+    print('실수값 모르냐')
