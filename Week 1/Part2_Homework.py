@@ -1,0 +1,6 @@
+print('Enter Rounder: ')
+rounder = float(input())
+print('rounder : ' + str(round(rounder)))
+print('Enter Abser: ')
+abser = float(input())
+print('abser : ' + str(abs(abser)))
