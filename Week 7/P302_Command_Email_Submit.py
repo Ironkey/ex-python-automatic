@@ -9,14 +9,12 @@ if len(sys.argv) > 3:
 else:
     print('Usage : Command [email] [text]')
 
-browser = webdriver.Chrome(r'C:\Users\Parkchihoon\Downloads\chromedrive\chromedriver.exe')
+browser = webdriver.Chrome(r'C:\Users\ChiHoon\Downloads\chromedriver\chromedriver.exe')
 browser.get('http://gmail.com')
-htmlElem = browser.find_element_by_tag_name('html')
 emailElem = browser.find_element_by_id('identifierId')
 emailElem.send_keys('hcb0402')
-htmlElem.send_keys(Keys.ENTER)
-
-
-passwordElem = browser.find_element_by_id('password')
+IdNext = browser.find_element_by_id('identifierNext').click()
+#passwordElem = browser.find_element_by_name('password')
+passwordElem = browser.find_element_by_class_name('OabDMe cXrdqd Y2Zypf')
 passwordElem.send_keys('djflq77clf!')
-passwordElem.submit()
+PasswordNext = browser.find_element_by_id('passwordNext').click()
